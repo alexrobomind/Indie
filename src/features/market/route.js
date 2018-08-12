@@ -1,12 +1,14 @@
 // This is the JSON way to define React Router rules in a Rekit app.
 // Learn more from: http://rekit.js.org/docs/routing.html
 
-import EsiComponents from './EsiComponents'
+import {
+  DefaultPage,
+} from './';
 
 export default {
-  path: 'common',
-  name: 'Common',
+  path: 'market',
+  name: 'Market',
   childRoutes: [
-    { path: 'components', component: EsiComponents }
+    { path: 'default-page', name: 'Default page', component: DefaultPage, isIndex: true },
   ],
 };
